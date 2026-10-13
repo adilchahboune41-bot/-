@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>الرفيق</title>
+<meta name="description" content="كنخرج ليك الكلب ديالك مزيان وفالوقت لي كيناسبك.">
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#F6F9FA;--ink:#0B2A33;--soft:#52707A;--card:#fff;--line:#DCE7EA;--brand:#0F4C5C;--on:#fff;--acc:#FFB400;--acc-on:#0B2A33;--hero:#0F4C5C;--hero-ink:#fff;--hero-soft:#B9D3D9;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0A1A20;--ink:#EAF4F6;--soft:#9DB8BF;--card:#12282F;--line:#223F48;--brand:#2A8CA3;--hero:#0F2F38}}
+:root[data-theme="dark"]{--bg:#0A1A20;--ink:#EAF4F6;--soft:#9DB8BF;--card:#12282F;--line:#223F48;--brand:#2A8CA3;--hero:#0F2F38}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:80px}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Cairo,Tahoma,Arial,sans-serif;line-height:1.8}
+.w{max-width:1040px;margin:0 auto;padding:0 20px}
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);border-bottom:1px solid var(--line)}
+nav .w{display:flex;align-items:center;justify-content:space-between;height:64px}
+.logo{display:flex;align-items:center;gap:10px;font-weight:800;font-size:22px;color:var(--ink);text-decoration:none}
+.logo svg{width:32px;height:32px}
+.btn{display:inline-block;background:var(--acc);color:var(--acc-on);font:800 16px Cairo,Tahoma,sans-serif;padding:10px 22px;border-radius:12px;border:0;text-decoration:none;cursor:pointer}
+.btn.big{padding:14px 30px;font-size:18px}
+.btn.ghost{background:transparent;color:var(--hero-ink);border:2px solid var(--hero-soft)}
+a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,summary:focus-visible{outline:3px solid var(--acc);outline-offset:3px}
+.hero{background:var(--hero);color:var(--hero-ink);padding:64px 0}
+.hero .w{display:grid;grid-template-columns:1.2fr 1fr;gap:40px;align-items:center}
+h1{font-size:clamp(32px,6vw,54px);line-height:1.3;margin:0 0 16px;font-weight:800}
+.hero p{font-size:19px;color:var(--hero-soft);margin:0 0 28px;max-width:30em}
+.hero .row{display:flex;gap:12px;flex-wrap:wrap}
+.art{background:rgba(255,255,255,.08);border-radius:28px;aspect-ratio:1/1;display:grid;place-items:center;max-width:340px;width:100%;justify-self:center}
+.art svg{width:62%;height:auto}
+section{padding:64px 0}
+h2{font-size:clamp(26px,4vw,36px);margin:0 0 8px;font-weight:800}
+.sub{color:var(--soft);margin:0 0 32px;font-size:18px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:24px}
+.card h3{margin:0 0 6px;font-size:20px}
+.card p{margin:0;color:var(--soft)}
+.price{font-size:38px;font-weight:800;margin:6px 0}
+.price small{font-size:16px;font-weight:400;color:var(--soft)}
+.card.feat{border:2px solid var(--acc)}
+.tag{display:inline-block;background:var(--acc);color:var(--acc-on);font-weight:800;font-size:13px;padding:0 10px;border-radius:99px}
+.steps{counter-reset:s;display:grid;gap:16px}
+.steps .card{display:flex;gap:16px;align-items:flex-start}
+.steps .card::before{counter-increment:s;content:counter(s);flex:none;width:40px;height:40px;border-radius:50%;background:var(--brand);color:var(--on);display:grid;place-items:center;font-weight:800}
+details{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 20px;margin-bottom:10px}
+summary{cursor:pointer;font-weight:600}
+details p{margin:8px 0 0;color:var(--soft)}
+form{background:var(--card);border:1px solid var(--line);border-radius:24px;padding:28px;display:grid;grid-template-columns:1fr 1fr;gap:14px;max-width:760px}
+label{font-weight:600;display:grid;gap:4px}
+input,select{font:inherit;padding:11px 12px;border-radius:12px;border:1px solid var(--line);background:var(--bg);color:var(--ink)}
+form .btn{grid-column:1/-1}
+footer{border-top:1px solid var(--line);padding:28px 0;color:var(--soft);font-size:15px}
+@media(max-width:720px){.hero .w{grid-template-columns:1fr}.art{max-width:220px;order:-1}form{grid-template-columns:1fr}.hero{padding:40px 0}section{padding:48px 0}}
+</style>
+</head>
+<body>
+<nav><div class="w">
+<a class="logo" href="#top"><svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="16" fill="#FFB400"/><g fill="#0B2A33"><ellipse cx="16" cy="20" rx="5.5" ry="4.5"/><circle cx="8.5" cy="14" r="2.3"/><circle cx="13" cy="9.5" r="2.3"/><circle cx="19" cy="9.5" r="2.3"/><circle cx="23.5" cy="14" r="2.3"/></g></svg>الرفيق</a>
+<a class="btn" href="#talab">طلب خرجة</a>
+</div></nav>
+
+<header class="hero" id="top"><div class="w">
+<div>
+<h1>كلبك يستاهل خرجة مزيانة، حتى ملي ما عندكش الوقت</h1>
+<p>كنجي لعندك، كنخرج الكلب ديالك، وكنصيفط ليك تصويرة ملي نكمل. وقتك لي وخدمتك لي، وكلبك فيدين مزيانين.</p>
+<div class="row"><a class="btn big" href="#talab">احجز خرجة</a><a class="btn big ghost" href="#atmina">شوف الأثمنة</a></div>
+</div>
+<div class="art"><svg viewBox="0 0 200 200" role="img" aria-label="رسم ديال كلب" style="width:84%"><path d="M52 70Q20 80 30 135Q55 140 62 105Z" fill="#8A5A2B"/><path d="M148 70Q180 80 170 135Q145 140 138 105Z" fill="#8A5A2B"/><ellipse cx="100" cy="105" rx="52" ry="50" fill="#E0A96D"/><ellipse cx="80" cy="98" rx="13" ry="14" fill="#C98A4B"/><ellipse cx="100" cy="132" rx="28" ry="22" fill="#F6E3C8"/><circle cx="80" cy="98" r="6.5" fill="#2B1B12"/><circle cx="120" cy="98" r="6.5" fill="#2B1B12"/><circle cx="82" cy="96" r="2" fill="#fff"/><circle cx="122" cy="96" r="2" fill="#fff"/><path d="M94 140Q100 168 106 140Z" fill="#F0707A"/><path d="M100 124V136M100 136Q90 146 82 138M100 136Q110 146 118 138" stroke="#2B1B12" stroke-width="3" fill="none" stroke-linecap="round"/><ellipse cx="100" cy="116" rx="11" ry="8" fill="#2B1B12"/><path d="M64 152Q100 172 136 152L140 166Q100 188 60 166Z" fill="#FFB400"/></svg></div>
+</div></header>
+
+<section id="khadamat"><div class="w">
+<h2>علاش تختار الرفيق؟</h2>
+<p class="sub">خدمة بسيطة وواضحة، مبنية على الثقة.</p>
+<div class="grid">
+<div class="card"><h3>وقت مرن</h3><p>الصباح، الظهر، العشية ولا الليل. كنتكيفو على جدولك.</p></div>
+<div class="card"><h3>تصاور بعد كل خرجة</h3><p>كتشوف كلبك فرحان وكتبقى مطمئن.</p></div>
+<div class="card"><h3>عناية فردية</h3><p>كل كلب كيتعامل معاه على حساب حجمو وطبعو وعاداتو.</p></div>
+<div class="card"><h3>كلشي فواتساب</h3><p>الحجز والتواصل والتأكيد، كلشي فمحادثة وحدة.</p></div>
+</div>
+</div></section>
+
+<section id="atmina" style="background:var(--card)"><div class="w">
+<h2>الأثمنة</h2>
+<p class="sub">بلا مفاجآت. الثمن كيبان قبل ما نبداو.</p>
+<div class="grid">
+<div class="card"><h3>خرجة وحدة</h3><div class="price">30 <small>درهم / 30 دقيقة</small></div><p>مزيانة للتجربة ولا للأيام المشغولة.</p></div>
+<div class="card feat"><span class="tag">الأكثر طلبا</span><h3>اشتراك شهري</h3><div class="price">25 <small>درهم / الخرجة</small></div><p>خرجة كل نهار، بثمن أرخص.</p></div>
+<div class="card"><h3>خرجة طويلة</h3><div class="price">50 <small>درهم / ساعة</small></div><p>للكلاب لي كيحتاجو بزاف ديال الحركة.</p></div>
+</div>
+</div></section>
+
+<section><div class="w">
+<h2>كيفاش كتخدم؟</h2>
+<p class="sub">ثلاث خطوات وكلشي واجد.</p>
+<div class="steps">
+<div class="card"><div><h3>عمر الطلب</h3><p>كتكتب سميتك، سمية الكلب، العنوان والوقت.</p></div></div>
+<div class="card"><div><h3>نأكدو على واتساب</h3><p>كنتفاهمو على التفاصيل والثمن.</p></div></div>
+<div class="card"><div><h3>كنخرجو</h3><p>كنجي ناخد الكلب، كنخرجو، وكنرجعو للدار مع تصويرة.</p></div></div>
+</div>
+</div></section>
+
+<section id="talab" style="background:var(--card)"><div class="w">
+<h2>طلب خرجة</h2>
+<p class="sub">عمر الاستمارة وغادي توصلني الرسالة فواتساب.</p>
+<form id="f">
+<label>سميتك<input id="n" required autocomplete="name"></label>
+<label>سمية الكلب ولا الحيوان<input id="a" required></label>
+<label>الحي ولا العنوان<input id="d" required></label>
+<label>الوقت لي بغيتي<select id="t"><option>الصباح</option><option>الظهر</option><option>العشية</option><option>الليل</option></select></label>
+<button class="btn big" type="submit">صيفط الطلب فواتساب</button>
+</form>
+</div></section>
+
+<section><div class="w">
+<h2>أسئلة كتتعاود</h2><p class="sub"></p>
+<details><summary>واش كتخرج بزاف ديال الكلاب فنفس الوقت؟</summary><p>لا، كل خرجة كتكون ديال كلب وحد (ولا ديال كلاب نفس العائلة) باش نعطيو العناية الكاملة.</p></details>
+<details><summary>كيفاش كنخلص؟</summary><p>كنتفاهمو على طريقة الخلاص ملي نأكدو الطلب.</p></details>
+<details><summary>شنو كيوقع إلا الكلب ما بغاش يخرج ولا طرا شي مشكل؟</summary><p>كنتواصل معاك فالحين، وكنديرو غير لي فيه راحة الكلب ديالك.</p></details>
+</div></section>
+
+<footer><div class="w">الرفيق · الدار البيضاء</div></footer>
+<script>
+var PHONE="212627764659";
+document.getElementById("f").addEventListener("submit",function(e){
+e.preventDefault();
+var m="سلام، بغيت خرجة للكلب.\nالسمية: "+n.value+"\nالحيوان: "+a.value+"\nالعنوان: "+d.value+"\nالوقت: "+t.value;
+window.open("https://wa.me/"+PHONE+"?text="+encodeURIComponent(m),"_blank");
+});
+</script>
+</body>
+</html>
